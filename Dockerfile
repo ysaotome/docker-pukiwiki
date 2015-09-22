@@ -14,6 +14,7 @@ ENV APACHE_RUN_USER www-data
 ENV APACHE_RUN_GROUP www-data
 ENV APACHE_LOG_DIR /var/log/apache2
 COPY config/000-default.conf /etc/apache2/sites-available/000-default.conf
+RUN a2enmod auth_digest
 
 # pukiwiki
 RUN wget -O pukiwiki-1_5_0_utf8.zip 'http://osdn.jp/frs/redir.php?m=jaist&f=%2Fpukiwiki%2F61634%2Fpukiwiki-1_5_0_utf8.zip' 
