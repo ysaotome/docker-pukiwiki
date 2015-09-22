@@ -10,6 +10,7 @@
 docker run -d -p 80:80 ysaotome/pukiwiki:1.5.0
 ```
 
-## Defailt Password
-```pukiwiki```
+## Default Password
+* pukiwiki
+
 
